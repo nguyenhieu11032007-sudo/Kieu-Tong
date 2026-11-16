@@ -374,15 +374,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/fireba
 import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 import { getFirestore, doc, onSnapshot, runTransaction } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
-// ĐIỀN cấu hình Firebase của bạn vào đây (xem README.md).
-// Để nguyên "YOUR_..." thì trang chạy ở chế độ demo, không cần Firebase.
+// Cấu hình Firebase của team (kho riêng tư, KHÔNG đổi kho sang Public khi còn dòng này).
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "YOUR_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyDaeu4doWeYm7qwiiNgTKsoHYZqKAPOUVA",
+  authDomain: "dao-marketing.firebaseapp.com",
+  projectId: "dao-marketing",
+  storageBucket: "dao-marketing.firebasestorage.app",
+  messagingSenderId: "1038621056260",
+  appId: "1:1038621056260:web:a06215f769ac7e48428451"
 };
 const TEAM_EMAIL = "team@dao.local";
 const CONFIGURED = !String(firebaseConfig.apiKey).startsWith("YOUR_");
